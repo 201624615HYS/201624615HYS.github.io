@@ -15,6 +15,12 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  -
+    scope:
+      path: "\_new_catagory" # an empty string here means all files in the project
+      type: "others"
+    values:
+      layout: "other"
 
 projects:
   sort_by: pushed
@@ -30,7 +36,7 @@ projects:
 social_media:
   # behance: your_username
   # dribbble: your_username
-  facebook: 
+  facebook: Jhonson.Han
   # hackerrank: your_username
   # instagram: your_username
   # keybase: your_username
