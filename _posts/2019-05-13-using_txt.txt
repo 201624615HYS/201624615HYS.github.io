@@ -1,4 +1,3 @@
 ---
 title: "Using txt file to posting"
-published: true
 ---

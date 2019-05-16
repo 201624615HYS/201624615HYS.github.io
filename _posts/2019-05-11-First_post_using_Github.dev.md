@@ -1,10 +1,10 @@
 ---
-title: "Real First post"
+title: "First post in Github.dev"
 published: true
 ---
 
 Today, I make my own blog using github.dev and jekyll.
-## IT WAS SO INTERESTING
+## HOW TO USE HIGHLIGHT
 
 I found something. when we press 
 # < Home 
