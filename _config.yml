@@ -1,5 +1,5 @@
-layout: stacked
-style: dark
+layout: stacked # sidebar
+style: dark # white
 
 plugins:
   - jekyll-octicons
@@ -12,15 +12,9 @@ defaults:
   -
     scope:
       path: "" # an empty string here means all files in the project
-      type: "posts"
+      type: "posts" # site.posts, /_posts
     values:
       layout: "post"
-  -
-    scope:
-      path: "\_new_catagory" # an empty string here means all files in the project
-      type: "others"
-    values:
-      layout: "other"
 
 projects:
   sort_by: pushed

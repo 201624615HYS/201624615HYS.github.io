@@ -2,7 +2,7 @@
 layout: post
 title:  "New post with permalink, highlighting"
 date:   2019-05-14 13:31:50 +0900
-categories: jekyll update
+categories: my_own
 permalink : dsds
 published : true
 ---
@@ -15,7 +15,6 @@ int main() {
   return 0;
 }
 {% endhighlight %}
-
 {% highlight cpp linenos %}
 #include <iostream>
 using namespace std;
@@ -27,7 +26,6 @@ int main() {
   return 0;
 }
 {% endhighlight %}
-
 using " ```langagename "
 ```cpp
 #include <iostream>

@@ -1,26 +1,23 @@
 <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>NEW CATAGORY!</h2>
-<p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">This is new catagory.</p>
+<p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
+  This is new catagory.</p>
 
-<div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
-    {% include repo-card.html %}
-</div>
-<div class="d-sm-flex flex-wrap gutter-condensed mb-4">
-    {% for other in site.others limit: 9 %}
-    <!--after limit number = number of post limit-->
-   
-    <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
-        <!--copy of post-card.html-->
+<div class="d-sm-flex flex-wrap gutter-condensed mb-4">  
+  <!--after limit number = number of post limit-->
+  {% for post in site.posts %}
+    {% unless post.catagoy == my_own %}
+      <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
         <div class="height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
-            <div class="d-flex flex-justify-between flex-items-start mb-1">
-              <h1 class="f4 lh-condensed mb-1">
-                <a href="{{ site.baseurl }}{{ other.url }}">
-                  {{ other.title }}
-                </a>
-              </h1>
-            </div>
-            <div class="text-gray mb-2 ws-normal">{{ other.date | date: "%b %d, %Y"}}</div>
-          </div>          
-    </div>
-    {% endfor %}
-    
+          <div class="d-flex flex-justify-between flex-items-start mb-1">
+            <h1 class="f4 lh-condensed mb-1">
+              <a href="{{ site.baseurl }}{{ post.url }}">
+                {{ post.title }}
+              </a>
+            </h1>
+          </div>
+          <div class="text-gray mb-2 ws-normal">{{ post.date | date: "%b %d, %Y"}}</div>
+        </div>    
+      </div>  
+    {% endunless %}
+  {% endfor %}  
 </div>

@@ -1,10 +1,12 @@
+---
+title: "Post with assect local img"
+cataorties: my_own
+---
+
 there's nothig
 
-![using_local_1]({{ "/assets/chulcheg.png" | }})
+![using_local_1]({{ "/assets/chulcheg.png" | ult_url }})
 
-![using_local_2]({{ "/assets/maggeollina.png"| }})
-<img width="100" height="100">
+![using_local_2]({{ "/assets/maggeollina.png"| ult_url }})
 
-![using_url_1]({{ | https://jekyllrb-ko.github.io/img/logo-2x.png }})
-
-you can [get the img]({{ "/assets/maggeollina.png" | }}) directly.
+you can [get the img]({{ "/assets/maggeollina.png" | ult_url }}) directly.
