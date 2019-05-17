@@ -1,4 +1,4 @@
 ---
 title: "Using txt file to posting"
-catagory: experiment
+catagories: experiment
 ---

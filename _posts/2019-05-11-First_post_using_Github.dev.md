@@ -1,7 +1,7 @@
 ---
 title: "First post in Github.dev"
 published: true
-cataorties: my_own
+catagories: my_own
 ---
 
 Today, I make my own blog using github.dev and jekyll.

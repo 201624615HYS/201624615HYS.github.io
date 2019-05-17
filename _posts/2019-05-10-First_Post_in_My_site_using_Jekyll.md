@@ -1,7 +1,7 @@
 ---
 title: "First Post in My site using Jekyll!"
 published: true
-cataorties: basic
+catagories: basic
 ---
 
 **Hello world**, this is my first Jekyll blog post.

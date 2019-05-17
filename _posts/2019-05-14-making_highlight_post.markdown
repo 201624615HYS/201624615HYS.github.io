@@ -2,7 +2,7 @@
 layout: post
 title:  "New post with permalink, highlighting"
 date:   2019-05-14 13:31:50 +0900
-categories: my_own
+catagories: my_own
 permalink : dsds
 published : true
 ---

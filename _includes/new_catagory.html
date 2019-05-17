@@ -5,7 +5,7 @@
 <div class="d-sm-flex flex-wrap gutter-condensed mb-4">  
   <!--after limit number = number of post limit-->
   {% for post in site.posts %}
-    {% unless post.catagoy == my_own %}
+    {% if post.catagories == 'my_own' %}
       <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
         <div class="height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
           <div class="d-flex flex-justify-between flex-items-start mb-1">
@@ -17,7 +17,7 @@
           </div>
           <div class="text-gray mb-2 ws-normal">{{ post.date | date: "%b %d, %Y"}}</div>
         </div>    
-      </div>  
-    {% endunless %}
+      </div>
+    {% endif %}  
   {% endfor %}  
 </div>

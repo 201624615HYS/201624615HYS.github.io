@@ -1,6 +1,6 @@
 ---
 title: "Post with assect local img"
-cataorties: my_own
+catagories: my_own
 ---
 
 there's nothig
